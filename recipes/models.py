@@ -31,3 +31,5 @@ class Recipe(models.Model):
         User, on_delete=models.SET_NULL, null=True
         )
     
+    def __str__(self):
+        return self.title
